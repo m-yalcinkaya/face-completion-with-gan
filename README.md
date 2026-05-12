@@ -1,11 +1,17 @@
-# Face Completion with GAN (Yüz Tamamlama)
+# Face Completion with GAN
 
 AI-powered web application that automatically completes partially masked faces using GANs. Upload a photo and the model will intelligently fill in masked regions of the face.
 
 ![Python](https://img.shields.io/badge/Python-3.12-blue)
 ![Flask](https://img.shields.io/badge/Flask-Web-green)
 
-## 📋 Requirements
+## Results
+
+**Demo Video**: [Watch the application in action](https://youtu.be/HLUZ7pDtJR0)
+
+![Results](results.png)
+
+## Requirements
 
 - Python 3.12+
 - TensorFlow/Keras, Flask, OpenCV, Pillow, NumPy
@@ -13,7 +19,7 @@ AI-powered web application that automatically completes partially masked faces u
 
 ---
 
-## ⚙️ Installation
+## Installation
 
 ```bash
 # Clone repository
@@ -31,7 +37,7 @@ pip install -r requirements.txt
 
 **Note**: Add the pre-trained model `model_294400.h5` to the project root directory.
 
-## 🚀 Quick Start
+## Quick Start
 
 ```bash
 python app.py
@@ -44,7 +50,7 @@ Open `http://localhost:5000` in your browser.
 3. View results (original, masked, and completed)
 4. Click "Re-mask and Complete" for new variations
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 ├── app.py                    # Flask application
@@ -55,20 +61,19 @@ Open `http://localhost:5000` in your browser.
 └── model_294400.h5          # Pre-trained model
 ```
 
-## 🧠 How It Works
+## How It Works
 
 1. **Face Detection** - OpenCV detects faces and resizes to 256×256
 2. **Random Masking** - Creates random masks on detected faces
 3. **GAN Processing** - Model completes masked regions
 4. **Result** - Returns original, masked, and completed images
 
-## 📊 Tech Stack
+## Tech Stack
 
 - **Backend**: Flask, Python 3.12
 - **ML**: TensorFlow/Keras (GAN)
 - **Image Processing**: OpenCV, Pillow
-- **Deployment**: Heroku (Gunicorn)
 
-## 📝 License
+## License
 
 MIT License - See LICENSE file for details
